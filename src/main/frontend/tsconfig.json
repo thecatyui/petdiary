@@ -18,6 +18,13 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "setupProxy.js"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "setupProxy.js",
+    ".eslintrc.json",
+    ".prettierrc"
+  ],
+  "exclude": ["node_modules", "dist"]
 }
