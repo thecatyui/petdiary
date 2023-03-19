@@ -1,16 +1,20 @@
 /** @type {import('next').NextConfig} */
 
-const { createProxyMiddleware } = require('http-proxy-middleware');
+const path = require('path');
 
 const nextConfig = {
   reactStrictMode: true,
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+    prependData: `@import "@/styles/_variables.scss"; @import "@/styles/_mixins.scss"; @import "@/styles/_colors.scss";`,
+  },
   async rewrites() {
     return [
       {
         source: '/api/:path*',
-        destination: 'http://localhost:8080/api/:path*' // Proxy to Backend
-      }
-    ]
+        destination: 'http://localhost:8080/api/:path*', // Proxy to Backend
+      },
+    ];
   },
   webpack: (config, options) => {
     config.module.rules.push({
@@ -33,6 +37,6 @@ const nextConfig = {
     });
     return config;
   },
-}
+};
 
 module.exports = nextConfig;
