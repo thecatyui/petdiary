@@ -9,6 +9,7 @@
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:@typescript-eslint/recommended",
+    "plugin:storybook/recommended",
     "next/core-web-vitals",
     "airbnb-base",
     "prettier"
@@ -24,7 +25,20 @@
           "order": "asc"
         }
       }
-    ]
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error"
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -32,7 +46,8 @@
       "jsx": true
     },
     "ecmaVersion": "latest",
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": ["tsconfig.json"]
   },
   "plugins": ["react", "react-hooks", "import", "@typescript-eslint"],
   "settings": {
