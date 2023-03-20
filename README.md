@@ -16,8 +16,18 @@ Web Application for pet
 ## Frontend
 ### Command
 `/petdiary/src/main/frontend`
-`yarn dev`
-`https://localhost:3000`
+- `yarn dev` `https://localhost:3000`
+- `yarn generate`
+- `yarn lint`
+- `yarn storybook`
+
+### Component
+- atom
+- molecure
+- organism
+
+### Style
+- scss
 
 ### Spec
 - Next.js
