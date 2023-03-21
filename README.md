@@ -14,8 +14,12 @@ Web Application for pet
 - JAVA
 
 ## Frontend
-### Command
+### Installation
 `/petdiary/src/main/frontend`
+- Install Node v.18.15.0
+- `yarn install`
+
+### Command
 - `yarn dev` `https://localhost:3000`
 - `yarn generate`
 - `yarn lint`
