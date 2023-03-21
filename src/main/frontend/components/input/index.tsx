@@ -7,11 +7,13 @@ import './index.scss';
 type InputProps = {
   placeholder?: string;
   text?: string;
+  label?: string;
 };
 
-const Input: React.FC<InputProps> = ({ text, placeholder }) => (
+const Input: React.FC<InputProps> = ({ text, placeholder, label }) => (
   <label className={useClass('a-input')}>
-    <input className={useClass('a-input', '_box')} placeholder={placeholder} defaultValue={text} />
+    <span className={useClass('a-input_label')}>{label}</span>
+    <input className={useClass('a-input_box')} placeholder={placeholder} defaultValue={text} />
   </label>
 );
 

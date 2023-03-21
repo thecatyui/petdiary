@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  stories: ['../**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: ['../components/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
@@ -38,8 +38,9 @@ module.exports = {
     });
     config.resolve.alias = {
       ...config.resolve.alias,
-      '@': path.resolve(__dirname, './'),
+      '@': path.resolve(__dirname, '../'),
     };
+    config.resolve.extensions.push('.ts', '.tsx', 'scss');
     return config;
   },
 };
