@@ -3,8 +3,13 @@
   "java.compile.nullAnalysis.mode": "automatic",
   "java.configuration.updateBuildConfiguration": "interactive",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "stylelint.stylelintPath": "src/main/frontend/node_modules/stylelint",
+  "stylelint.validate": ["css", "scss"],
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "css.validate": false,
+  "scss.validate": false
 }

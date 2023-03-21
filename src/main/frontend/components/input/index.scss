@@ -4,6 +4,7 @@
 
   &_box {
     @include font-size(16);
+
     padding: px-pc(10);
     border: 1px solid lightgray;
     border-radius: px-pc(5);

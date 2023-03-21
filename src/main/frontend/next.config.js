@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 
+const StylelintPlugin = require('stylelint-webpack-plugin'); // line to add
 const path = require('path');
 
 const nextConfig = {
@@ -17,6 +18,7 @@ const nextConfig = {
     ];
   },
   webpack: (config, options) => {
+    config.plugins.push(new StylelintPlugin());
     config.module.rules.push({
       test: /\.svg/,
       use: {

@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
+    "lint:style": "stylelint --fix ./**/*.{css,scss}",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -54,7 +55,12 @@
     "hygen": "^6.2.11",
     "prettier": "^2.8.4",
     "storybook-addon-next": "^1.7.3",
-    "style-loader": "^3.3.2"
+    "style-loader": "^3.3.2",
+    "stylelint": "^15.3.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recess-order": "^4.0.0",
+    "stylelint-config-standard": "^31.0.0",
+    "stylelint-config-standard-scss": "^7.0.1"
   },
   "resolutions": {
     "@storybook/react-docgen-typescript-plugin": "1.0.6--canary.9.cd77847.0"
