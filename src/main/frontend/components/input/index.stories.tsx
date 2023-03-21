@@ -2,6 +2,7 @@ import React from 'react';
 
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
+import Icon from '../icon';
 import Input from './index';
 
 export default {
@@ -17,4 +18,5 @@ Primary.args = {
   text: 'value',
   placeholder: 'input text',
   label: 'label',
+  icon: <Icon name='userCircle' />,
 };

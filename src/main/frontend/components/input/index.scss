@@ -2,11 +2,31 @@
   @include flex(column, px-pc(5), 0);
   @include font-size(16);
 
+  $root: &;
+
   &_box {
     @include font-size(16);
 
     padding: px-pc(10);
     border: 1px solid lightgray;
     border-radius: px-pc(5);
+
+    .has-icon & {
+      padding-left: px-pc(40);
+    }
+  }
+
+  &_container {
+    position: relative;
+  }
+
+  &_icon {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-right: px-pc(10);
+    padding-left: px-pc(10);
   }
 }
