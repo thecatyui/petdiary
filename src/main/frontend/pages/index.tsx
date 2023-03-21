@@ -1,7 +1,12 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-function App() {
+import axios from 'axios';
+
+type Props = {
+  children: React.ReactNode;
+};
+
+const App: React.FC<Props> = () => {
   const [hello, setHello] = useState('');
 
   useEffect(() => {
@@ -14,6 +19,6 @@ function App() {
   }, []);
 
   return <div>백엔드에서 가져온 데이터입니다 : {hello}</div>;
-}
+};
 
 export default App;

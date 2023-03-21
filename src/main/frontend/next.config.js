@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
 
+const StylelintPlugin = require('stylelint-webpack-plugin'); // line to add
 const path = require('path');
 
 const nextConfig = {
   reactStrictMode: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
-    prependData: `@import "@/styles/_variables.scss"; @import "@/styles/_mixins.scss"; @import "@/styles/_colors.scss";`,
+    prependData: `@import "@/styles/_variables.scss"; @import "@/styles/_mixins.scss"; @import "@/styles/_colors.scss"; @import "@/styles/_reset.scss";`,
   },
   async rewrites() {
     return [
@@ -17,6 +18,7 @@ const nextConfig = {
     ];
   },
   webpack: (config, options) => {
+    config.plugins.push(new StylelintPlugin());
     config.module.rules.push({
       test: /\.svg/,
       use: {

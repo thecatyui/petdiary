@@ -1,0 +1,20 @@
+@mixin flex($direction, $row, $col) {
+  display: flex;
+  flex-direction: $direction;
+  row-gap: $row;
+  column-gap: $col;
+}
+
+@mixin font-size($px) {
+  font-size: px-pc($px);
+}
+
+@function px-pc($px) {
+  @return min(#{$px}px, calc((#{$px} / 1440) * 100vw));
+}
+
+@mixin hover {
+  &:not([disabled]):hover {
+    @content;
+  }
+}
