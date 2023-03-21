@@ -1,5 +1,6 @@
-import useClass from 'classnames';
 import React from 'react';
+
+import useClass from 'classnames';
 
 import './index.scss';
 
