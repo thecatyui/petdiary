@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 import axios from 'axios';
 
+import Header from '@/components/header';
+import Layout from '@/components/layout';
+
 type Props = {
   children: React.ReactNode;
 };
@@ -18,7 +21,13 @@ const App: React.FC<Props> = () => {
       .catch((error) => console.error(error));
   }, []);
 
-  return <div>백엔드에서 가져온 데이터입니다 : {hello}</div>;
+  return (
+    <>
+      <Header />
+      <Layout>
+        <div>Hello, {hello}</div>
+      </Layout>
+    </>
+  );
 };
-
 export default App;

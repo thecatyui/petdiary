@@ -6,8 +6,6 @@ import Lock from '@/public/icons/lock.svg';
 import Schedule from '@/public/icons/schedule.svg';
 import UserCircle from '@/public/icons/user-circle.svg';
 
-import './index.scss';
-
 type IconsProps = {
   [key: string]: React.ReactNode;
 };
