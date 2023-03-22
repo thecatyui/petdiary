@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Icon from ".";
+import Icon from '.';
 
 export default {
   title: 'Pet Diary/A/Icon',
@@ -9,7 +9,17 @@ export default {
 
 const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const UserCircle = Template.bind({});
+UserCircle.args = {
   name: 'userCircle',
+};
+
+export const Lock = Template.bind({});
+Lock.args = {
+  name: 'lock',
+};
+
+export const Schedule = Template.bind({});
+Schedule.args = {
+  name: 'schedule',
 };
