@@ -2,6 +2,8 @@ import React from 'react';
 
 import useClass from 'classnames';
 
+import Lock from '@/public/icons/lock.svg';
+import Schedule from '@/public/icons/schedule.svg';
 import UserCircle from '@/public/icons/user-circle.svg';
 
 import './index.scss';
@@ -12,6 +14,8 @@ type IconsProps = {
 
 const icons: IconsProps = {
   userCircle: <UserCircle />,
+  lock: <Lock />,
+  schedule: <Schedule />,
 };
 
 const names = Object.keys(icons) as string[];

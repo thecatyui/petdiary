@@ -1,0 +1,7 @@
+.m-form {
+  @include flex(column, px-pc(5), 0);
+
+  &_buttons {
+    @include flex('row', px-pc(5), px-pc(5));
+  }
+}

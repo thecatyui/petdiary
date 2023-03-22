@@ -13,10 +13,24 @@ export default {
 
 const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Text = Template.bind({});
+Text.args = {
+  type: 'text',
   text: 'value',
   placeholder: 'input text',
   label: 'label',
   icon: <Icon name='userCircle' />,
+};
+
+export const Password = Template.bind({});
+Password.args = {
+  type: 'password',
+  placeholder: 'password',
+  icon: <Icon name='lock' />,
+};
+
+export const Date = Template.bind({});
+Date.args = {
+  type: 'date',
+  placeholder: '',
 };

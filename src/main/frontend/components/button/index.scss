@@ -1,0 +1,14 @@
+.a-button {
+  padding: px-pc(5) px-pc(10);
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: px-pc(5);
+
+  &:hover {
+    background-color: lightblue;
+  }
+
+  &:active {
+    background-color: aquamarine;
+  }
+}

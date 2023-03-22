@@ -1,12 +1,13 @@
 .a-input {
-  @include flex(column, px-pc(5), 0);
-  @include font-size(16);
+  @include flex(column, 0, 0);
+  @include font-size(14);
 
   $root: &;
 
   &_box {
     @include font-size(16);
 
+    width: 100%;
     padding: px-pc(10);
     border: 1px solid lightgray;
     border-radius: px-pc(5);
