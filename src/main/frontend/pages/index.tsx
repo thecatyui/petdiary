@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import axios from 'axios';
+import Head from 'next/head';
 
 import Header from '@/components/header';
 import Layout from '@/components/layout';
@@ -23,6 +24,10 @@ const App: React.FC<Props> = () => {
 
   return (
     <>
+      <Head>
+        <title>Pet Diary, Top Page</title>
+        <meta name='description' content='Web for Pet, Pet Diary' />
+      </Head>
       <Header />
       <Layout>
         <div>Hello, {hello}</div>
