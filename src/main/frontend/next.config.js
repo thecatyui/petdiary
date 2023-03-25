@@ -9,6 +9,10 @@ const nextConfig = {
     includePaths: [path.join(__dirname, 'styles')],
     prependData: `@import "@/styles/_variables.scss"; @import "@/styles/_mixins.scss"; @import "@/styles/_colors.scss"; @import "@/styles/_reset.scss";`,
   },
+  i18n: {
+    locales: ['en', 'ja', 'kr'],
+    defaultLocale: 'en',
+  },
   async rewrites() {
     return [
       {
