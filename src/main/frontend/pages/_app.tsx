@@ -1,10 +1,12 @@
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 
+import { appWithTranslation } from 'next-i18next';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
 import '@/components/index.scss';
+import NextI18nextConfig from '@/next-i18next.config';
 import '@/pages/index.scss';
 import '@/styles/globals.scss';
 
@@ -20,4 +22,4 @@ const App = ({ Component, pageProps }: AppProps) => (
   </QueryClientProvider>
 );
 
-export default App;
+export default appWithTranslation(App, NextI18nextConfig);
