@@ -12,7 +12,9 @@
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "generate": "hygen generator component"
+    "generate": "hygen generator component",
+    "cypress": "cypress open",
+    "cypress:headless": "npx cypress run --record --key 4a9df6a1-3e3b-4cae-8f87-0fa5cfb5dd65"
   },
   "dependencies": {
     "@storybook/react": "^6.5.16",
@@ -51,6 +53,7 @@
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "babel-loader": "^8.3.0",
     "css-loader": "^6.7.3",
+    "cypress": "^12.8.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-storybook": "^0.6.11",
