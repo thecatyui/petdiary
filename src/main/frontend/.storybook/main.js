@@ -21,6 +21,10 @@ module.exports = {
   },
   webpackFinal: async (config) => {
     config.plugins.push(new StylelintPlugin());
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname, '../'),
+    };
     config.module.rules.push(
       {
         test: /\.scss$/,
@@ -48,10 +52,6 @@ module.exports = {
         ],
       },
     );
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@': path.resolve(__dirname, '../'),
-    };
     config.resolve.extensions.push('.ts', '.tsx', 'scss');
     const fileLoaderRule = config.module.rules.find((rule) => rule.test && rule.test.test('.svg'));
     fileLoaderRule.exclude = /\.svg$/;

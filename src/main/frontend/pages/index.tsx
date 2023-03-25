@@ -17,6 +17,7 @@ type User = { id: number; name: string; username: string; email: string; address
 const App: React.FC<Props> = () => {
   const [hello, setHello] = useState('');
   const result = useQuery('users', fetchUsers);
+  console.log(result);
 
   useEffect(() => {
     axios
@@ -37,7 +38,7 @@ const App: React.FC<Props> = () => {
       <Layout>
         <div>Hello, {hello}</div>
         <ul>
-          {result.data.map((data: User, index: number) => (
+          {result.data?.map((data: User, index: number) => (
             <li key={index}>{data.name}</li>
           ))}
         </ul>

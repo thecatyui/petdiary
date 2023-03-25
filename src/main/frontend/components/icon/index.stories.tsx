@@ -1,6 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Icon from '.';
+import '../index.scss';
 
 export default {
   title: 'Pet Diary/A/Icon',

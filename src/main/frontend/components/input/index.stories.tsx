@@ -3,6 +3,7 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import Icon from '../icon';
+import '../index.scss';
 import Input from './index';
 
 export default {
