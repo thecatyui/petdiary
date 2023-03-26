@@ -1,1 +1,10 @@
-{ "login": "1", "logout": "2", "submit": "3", "cancel": "4" }
+{
+  "login": {
+    "login": "login",
+    "logout": "logout",
+    "submit": "submit",
+    "cancel": "cancel",
+    "placeHolderId": "input ID",
+    "placeHolderPw": "input PW"
+  }
+}

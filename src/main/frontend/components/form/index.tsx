@@ -3,7 +3,6 @@ import React from 'react';
 import useClass from 'classnames';
 
 import Button from '../button';
-import './index.scss';
 
 type FormProps = {
   children: React.ReactNode;

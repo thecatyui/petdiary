@@ -19,6 +19,7 @@ module.exports = {
   core: {
     builder: '@storybook/builder-webpack5',
   },
+  staticDirs: [{ from: '../public', to: '/public' }],
   webpackFinal: async (config) => {
     config.plugins.push(new StylelintPlugin());
     config.resolve.alias = {

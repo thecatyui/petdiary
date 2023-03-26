@@ -4,7 +4,8 @@
   "private": true,
   "proxy": "http://localhost:8080",
   "scripts": {
-    "dev": "next dev",
+    "dev": "yarn open && next dev",
+    "open": "start http://localhost:3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
