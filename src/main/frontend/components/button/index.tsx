@@ -2,8 +2,6 @@ import React from 'react';
 
 import useClass from 'classnames';
 
-import './index.scss';
-
 type ButtonProps = {
   type: 'submit' | 'button';
   text: string;

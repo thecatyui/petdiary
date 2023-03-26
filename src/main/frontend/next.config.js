@@ -2,6 +2,7 @@
 
 const StylelintPlugin = require('stylelint-webpack-plugin'); // line to add
 const path = require('path');
+const { i18n } = require('./next-i18next.config');
 
 const nextConfig = {
   reactStrictMode: true,
@@ -9,6 +10,7 @@ const nextConfig = {
     includePaths: [path.join(__dirname, 'styles')],
     prependData: `@import "@/styles/_variables.scss"; @import "@/styles/_mixins.scss"; @import "@/styles/_colors.scss"; @import "@/styles/_reset.scss";`,
   },
+  i18n,
   async rewrites() {
     return [
       {
@@ -23,7 +25,7 @@ const nextConfig = {
       {
         test: /\.svg/,
         use: {
-          loader: 'svg-url-loader',
+          loader: '@svgr/webpack',
         },
       },
       {

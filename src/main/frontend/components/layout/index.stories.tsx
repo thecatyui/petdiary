@@ -1,5 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Layout from ".";
+
+import Layout from '.';
+import '../index.scss';
 
 export default {
   title: 'Pet Diary/O/Layout',
@@ -10,4 +12,3 @@ const Template: ComponentStory<typeof Layout> = (args) => <Layout {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {};
-

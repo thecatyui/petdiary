@@ -1,8 +1,8 @@
 ---
 to: components/<%= name %>/index.tsx
 ---
+import React from 'react';
 import useClass from 'classnames';
-import './index.scss';
 
 type <%= h.capitalize(name) %>Props = {
     children: React.ReactNode;
