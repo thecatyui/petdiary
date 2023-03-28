@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Button from '.';
-import '../index.scss';
+import './index.scss';
 
 export default {
   title: 'Pet Diary/A/Button',

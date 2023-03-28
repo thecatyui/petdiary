@@ -2,8 +2,8 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Form from '.';
 import Icon from '../icon';
-import '../index.scss';
 import Input from '../input';
+import './index.scss';
 
 export default {
   title: 'Pet Diary/M/Form',

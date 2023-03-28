@@ -2,8 +2,8 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Image from '@/components/image';
 
-import '../index.scss';
-import Login from ".";
+import Login from '.';
+import './index.scss';
 
 export default {
   title: 'Pet Diary/O/Login',

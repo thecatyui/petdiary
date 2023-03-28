@@ -1,12 +1,22 @@
 .o-layout {
-  display: block;
+  @include flex(row, 0, 0);
+
   width: 100%;
   max-width: 1920px;
-  height: 100vh;
+  min-height: 100vh;
   padding: 20px;
   margin: 0 auto;
-  margin-top: 10px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 15px lightblue;
+  margin-top: 70px;
+  background-color: transparent;
+
+  &__mainContents {
+    display: flex;
+    flex: 1 1 700px;
+    justify-content: center;
+
+    &-inner {
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }
