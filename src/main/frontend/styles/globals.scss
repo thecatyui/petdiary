@@ -81,9 +81,8 @@ body {
 
 body {
   padding: 0 40px;
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
-    rgb(var(--background-start-rgb));
+  color: $font-default;
+  background-color: $background-default;
 }
 
 a {

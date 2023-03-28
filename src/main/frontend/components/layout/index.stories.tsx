@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Layout from '.';
-import '../index.scss';
+import './index.scss';
 
 export default {
   title: 'Pet Diary/O/Layout',

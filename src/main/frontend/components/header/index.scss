@@ -1,19 +1,22 @@
 .o-header {
-  @include flex('row', px-pc(5), 0);
+  @include flex(row, px-pc(5), 0);
 
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1920px;
   height: auto;
-  padding: 5px 20px;
+  padding: 5px 40px;
   margin: 0 auto;
-  background-color: white;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  box-shadow: 0 0 15px lightblue;
+  color: $font-default;
+  background-color: $background-default;
+  border-bottom: 1px solid $border-default;
+  box-shadow: 0 0 5px $shadow-default;
 
   &_menu {
-    @include flex('row', px-pc(5), 0);
+    @include flex(row, px-pc(5), 0);
   }
 }

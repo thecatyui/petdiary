@@ -11,6 +11,8 @@ import { useRouter } from 'next/router';
 import { fetchUsers } from '@/apis/user';
 import Header from '@/components/header';
 import Layout from '@/components/layout';
+import SideMenu from '@/components/side-menu';
+import SubMenu from '@/components/sub-menu';
 
 type Props = {
   children: React.ReactNode;
@@ -34,13 +36,13 @@ const App: React.FC<Props> = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       <Head>
         <title>Pet Diary, Top Page</title>
         <meta name='description' content='Web for Pet, Pet Diary' />
       </Head>
       <Header />
-      <Layout>
+      <Layout leftSidebar={<SideMenu></SideMenu>} rightSidebar={<SubMenu></SubMenu>}>
         <div>Hello, {hello}</div>
         <div>locale: {locale}</div>
         <div>locales: {locales}</div>
@@ -52,7 +54,7 @@ const App: React.FC<Props> = () => {
           ))}
         </ul>
       </Layout>
-    </>
+    </React.Fragment>
   );
 };
 export default App;

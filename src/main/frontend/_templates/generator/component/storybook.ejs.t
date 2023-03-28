@@ -4,7 +4,7 @@ to: components/<%= name %>/index.stories.tsx
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import <%= h.capitalize(name) %> from './';
-import '../index.scss';
+import './index.scss';
 
 export default {
   title: 'Pet Diary/<%= h.capitalize(type) %>/<%= h.capitalize(name) %>',

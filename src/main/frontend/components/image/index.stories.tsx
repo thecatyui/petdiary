@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Image from '.';
-import '../index.scss';
+import './index.scss';
 
 export default {
   title: 'Pet Diary/A/Image',

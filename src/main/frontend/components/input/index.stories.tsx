@@ -3,8 +3,8 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import Icon from '../icon';
-import '../index.scss';
 import Input from './index';
+import './index.scss';
 
 export default {
   title: 'Pet Diary/A/Input',

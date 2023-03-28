@@ -1,10 +1,22 @@
 // Colors
-$black: #000;
-$white: #fff;
+$black: #1b1c21;
+$palette-white: #fff;
+$palette-black: #1b1c21;
+$palette-coolgray: #58585a;
+$palette-alabaster: #f2ede1;
+$palette-babypowder: #fffef8;
+$palette-pastelgray: #c5ced9;
 
 // Font Colors
+$font-default: $palette-black;
 $font-black: $black;
 
 // Background Colors
+$background-default: $palette-babypowder;
+$background-white: $palette-white;
+
+// Border Colors
+$border-default: rgba($palette-coolgray, 0.05);
 
 // Box-Shadow Colors
+$shadow-default: rgba($palette-pastelgray, 0.7);
