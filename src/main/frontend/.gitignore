@@ -41,3 +41,13 @@ next-env.d.ts
 *.css.map
 *.sass.map
 *.scss.map
+
+### yarn ###
+# used Zero-Install
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

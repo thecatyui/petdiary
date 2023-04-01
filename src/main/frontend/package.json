@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:8080",
+  "_where": "D:\\github2\\petdiary\\src\\main\\frontend",
   "scripts": {
     "dev": "yarn open && next dev",
     "open": "start http://localhost:3000",
@@ -19,7 +20,7 @@
   },
   "dependencies": {
     "@storybook/react": "^6.5.16",
-    "@types/node": "18.15.3",
+    "@types/node": "^18.15.11",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
@@ -83,5 +84,6 @@
       "prettier --write",
       "eslint --fix"
     ]
-  }
+  },
+  "packageManager": "yarn@3.5.0"
 }
