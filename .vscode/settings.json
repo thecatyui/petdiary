@@ -4,12 +4,23 @@
   "java.configuration.updateBuildConfiguration": "interactive",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "stylelint.stylelintPath": "src/main/frontend/node_modules/stylelint",
-  "stylelint.validate": ["css", "scss"],
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
   "css.validate": false,
-  "scss.validate": false
+  "scss.validate": false,
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "eslint.nodePath": "src/main/frontend/.yarn/sdks",
+  "prettier.prettierPath": "src/main/frontend/.yarn/sdks/prettier/index.js",
+  "typescript.tsdk": "src/main/frontend/.yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }

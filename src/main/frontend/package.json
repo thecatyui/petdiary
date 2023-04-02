@@ -4,8 +4,7 @@
   "private": true,
   "proxy": "http://localhost:8080",
   "scripts": {
-    "dev": "yarn open && next dev",
-    "open": "start http://localhost:3000",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
@@ -61,6 +60,8 @@
     "cypress": "^12.8.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.11",
     "hygen": "^6.2.11",
     "prettier": "^2.8.4",
@@ -69,6 +70,7 @@
     "stylelint": "^15.3.0",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-recess-order": "^4.0.0",
+    "stylelint-config-recommended-scss": "^9.0.1",
     "stylelint-config-standard": "^31.0.0",
     "stylelint-config-standard-scss": "^7.0.1",
     "stylelint-webpack-plugin": "^4.1.0"
@@ -81,5 +83,6 @@
       "prettier --write",
       "eslint --fix"
     ]
-  }
+  },
+  "packageManager": "yarn@3.5.0"
 }

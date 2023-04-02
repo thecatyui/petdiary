@@ -19,7 +19,7 @@ const LoginPage: React.FC = () => {
         <meta name='description' content='Web for Pet, Pet Diary' />
       </Head>
       <Header />
-      <Layout>
+      <Layout leftSidebar={undefined} rightSidebar={undefined}>
         <Login
           logo={<Image src={'/logos/dummy-logo.png'} alt={''} />}
           submitText={t('submit')}
