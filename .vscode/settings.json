@@ -11,5 +11,14 @@
     "source.fixAll.stylelint": true
   },
   "css.validate": false,
-  "scss.validate": false
+  "scss.validate": false,
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "eslint.nodePath": "src/main/frontend/.yarn/sdks",
+  "prettier.prettierPath": "src/main/frontend/.yarn/sdks/prettier/index.js",
+  "typescript.tsdk": "src/main/frontend/.yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "eslint.workingDirectories": ["src/main/frontend"]
 }
