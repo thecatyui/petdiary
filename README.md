@@ -31,8 +31,8 @@ Web Application for pet
 - organism
 
 ### Style
-- scss
+- SCSS (_mixin, _color)
 
 ### Spec
-- Next.js
-- Sass
+- Next.js w/ yarn berry
+- SCSS
