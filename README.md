@@ -16,8 +16,20 @@ Web Application for pet
 ## Frontend
 ### Installation
 `/petdiary/src/main/frontend`
-- Install Node v.18.15.0
-- `yarn install`
+- Install Node v.18.15.0 and JDK19 ([download](https://drive.google.com/drive/u/0/folders/1v83dvzIUdYwRgCPnXkKwNBMvy9zd0272))
+```
+npm install --global yarn
+yarn set version berry
+yarn install
+```
+- Install Recommended Exetensions
+```
+yarn dlx @yarnpkg/sdks vscode
+
+in VS Code
+> TypeScript: Select TypeScript Version...
+select Use Workspace Version
+```
 
 ### Command
 - `yarn dev` `https://localhost:3000`
