@@ -3,8 +3,14 @@
 const StylelintPlugin = require('stylelint-webpack-plugin'); // line to add
 const path = require('path');
 const { i18n } = require('./next-i18next.config');
+const CompressionPlugin = require('compression-webpack-plugin');
+
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
 
 const nextConfig = {
+  compress: true,
   reactStrictMode: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
@@ -21,6 +27,7 @@ const nextConfig = {
   },
   webpack: (config, options) => {
     config.plugins.push(new StylelintPlugin());
+    config.plugins.push(new CompressionPlugin());
     config.module.rules.push(
       {
         test: /\.svg/,
@@ -45,4 +52,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = withBundleAnalyzer(nextConfig);
