@@ -2,6 +2,13 @@
   "recommendations": [
     "arcanis.vscode-zipfs",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "vscjava.vscode-maven",
+    "vscjava.vscode-java-dependency",
+    "vscjava.vscode-java-debug",
+    "vscjava.vscode-java-pack",
+    "redhat.java",
+    "dsznajder.es7-react-js-snippets"
   ]
 }
