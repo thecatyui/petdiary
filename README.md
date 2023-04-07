@@ -2,6 +2,7 @@
 Web Application for pet
 
 # How to start
+
 ## Backend
 ### Command
 `default root`
@@ -12,6 +13,7 @@ Web Application for pet
 - Spring boot (maven)
 - PostgreSQL (port: 5462)
 - JAVA
+
 
 ## Frontend
 ### Installation
@@ -48,3 +50,9 @@ select Use Workspace Version
 ### Spec
 - Next.js w/ yarn berry
 - SCSS
+
+
+## Design
+
+### Figma
+https://www.figma.com/community/file/1226068519565603981
