@@ -54,5 +54,5 @@
       "version": "detect"
     }
   },
-  "parserOptions.project": "src/main/frontend/tsconfig.json"
+  "root": true
 }
